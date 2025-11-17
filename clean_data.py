@@ -196,13 +196,13 @@ def find_duplicates(train_dir, test_dir, remove_from_test=True):
 # Décommentez la ligne suivante pour activer la suppression automatique
 # find_duplicates(train_dir, test_dir, remove_from_test=True)
 
-Exécuter la détection RAPIDE des doublons (sans suppression)
+#Exécuter la détection RAPIDE des doublons (sans suppression)
 print("=" * 60)
 print("DÉTECTION RAPIDE DES DOUBLONS (Mode analyse uniquement)")
 print("=" * 60)
 duplicates = find_duplicates(train_dir, test_dir, remove_from_test=True)
 
-Pour supprimer les doublons, décommentez la ligne suivante:
+#Pour supprimer les doublons, décommentez la ligne suivante:
 find_duplicates(train_dir, test_dir, remove_from_test=True)
 
 
@@ -341,13 +341,13 @@ def find_duplicates_simple(train_dir, test_dir, remove_duplicates=False, remove_
 # duplicates = find_duplicates_simple(train_dir, test_dir, remove_duplicates=False)
 
 
-Exécuter la détection des doublons (version simplifiée)
-=======================================================
+#Exécuter la détection des doublons (version simplifiée)
+#=======================================================
 
-Détection sans suppression
+#Détection sans suppression
 duplicates = find_duplicates_simple(train_dir, test_dir, remove_duplicates=False)
 
-Pour supprimer les doublons, décommentez la ligne suivante:
+#Pour supprimer les doublons, décommentez la ligne suivante:
 duplicates = find_duplicates_simple(train_dir, test_dir, remove_duplicates=True, remove_from='test')
 
 # ============================================
@@ -699,19 +699,19 @@ def find_all_duplicates_exhaustive(train_dir, test_dir,
 
 # Exemple d'utilisation:
 # report = find_all_duplicates_exhaustive(
-     train_dir, test_dir,
-     check_train_internal=True ,
-     check_test_internal=True ,
-     check_cross= True,
-     remove_duplicates= True ,  # Mettre True pour supprimer
-     remove_from='test',  # 'test', 'train', ou 'both'
-     export_report= True )
+    #  train_dir, test_dir,
+    #  check_train_internal=True ,
+    #  check_test_internal=True ,
+    #  check_cross= True,
+    #  remove_duplicates= True ,  # Mettre True pour supprimer
+    #  remove_from='test',  # 'test', 'train', ou 'both'
+    #  export_report= True )
 
 
-Exécuter l'analyse exhaustive des doublons
-============================================
+# Exécuter l'analyse exhaustive des doublons
+# ============================================
 
-Analyse complète (sans suppression)
+# Analyse complète (sans suppression)
 report = find_all_duplicates_exhaustive(
     train_dir, test_dir,
     check_train_internal=True,    # Vérifier les doublons dans train
@@ -722,5 +722,5 @@ report = find_all_duplicates_exhaustive(
     export_report=True             # Exporter un rapport JSON
 )
 
-Pour supprimer les doublons, modifiez remove_duplicates=True ci-dessus
-ATTENTION: La suppression est irréversible!
+# Pour supprimer les doublons, modifiez remove_duplicates=True ci-dessus
+# ATTENTION: La suppression est irréversible!
